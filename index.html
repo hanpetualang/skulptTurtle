@@ -32,6 +32,7 @@
             // configure the output function
             // call Sk.importMainWithBody()
             function runit() {
+                document.getElementById("btn-rm").remove();
                 var prog = document.getElementById("yourcode").value;
                 var mypre = document.getElementById("output");
                 mypre.innerHTML = "";
@@ -149,7 +150,9 @@ turtle.done()
             </textarea
                 >
                 <br />
-                <button type="button" onclick="runit()">Click Me !</button>
+                <button id="btn-rm" type="button" onclick="runit()">
+                    Click Me !
+                </button>
             </form>
             <pre id="output"></pre>
             <!-- If you want turtle graphics include a canvas -->
